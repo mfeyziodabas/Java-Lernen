@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class Nutzer {
 	
-	private String name;
-	private int idNummer;
-	private Adresse adresse;
-	private Buch [] bucherListe;
+	protected String name;
+	protected int idNummer;
+	protected Adresse adresse;
+	protected Buch [] bucherListe;
 	
 	public Nutzer(String name, int idNummer, Adresse adresse) {
 		this.name = name;
