@@ -61,6 +61,35 @@ public class Bibliothek {
 		//Nach der Rückgabe Bücherliste vom Nutzer überprüfen
 		System.out.println("\n" +hftStuttgart.nutzerList[0].listNutzerBucher());
 		
+		//Mitarbeiter erstellen
+		hftStuttgart.nutzerList[1] = new Mitarbeiter("Joachim Graber", 1001220, new Adresse("Mettingerstr", 23, 73061, "Ebersbach"), 224, 8933);
+		
+		//Fur den Mitarbeiter Bucher ausleihen
+		hftStuttgart.nutzerList[1].buchAusleihen(list[4]);
+		hftStuttgart.nutzerList[1].buchAusleihen(list[1]);
+		
+		//Bucherliste vom Mitarbeiter sehen
+		System.out.println("\n" +hftStuttgart.nutzerList[1].listNutzerBucher());
+		
+		//Alle Bucher zuruckgeben (Mitarbeiter)
+		System.out.println("\n");
+		hftStuttgart.nutzerList[1].bucherZuruckGeben();
+				
+		//Nach der Rückgabe Bücherliste vom Mitarbeiter überprüfen
+		System.out.println("\n" +hftStuttgart.nutzerList[1].listNutzerBucher());
+		
+		//String, der im Aufgabe erstellen
+		System.out.println("\n");
+		System.out.println("Mitarbeiter: " + hftStuttgart.nutzerList[1].getName() 
+										+ "(" + hftStuttgart.nutzerList[1].getIdNummer()  
+										+")\n" + "Darf " + hftStuttgart.nutzerList[1].getBucherListe().length 
+										+ " Bucher ausleihen");
+		System.out.println("\n");
+		System.out.println("Nutzer: " + hftStuttgart.nutzerList[0].getName() 
+				+ "(" + hftStuttgart.nutzerList[0].getIdNummer()  
+				+")\n" + "Darf " + hftStuttgart.nutzerList[0].getBucherListe().length 
+				+ " Bucher ausleihen");
+		
 	}
 
 }
