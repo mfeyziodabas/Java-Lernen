@@ -24,6 +24,10 @@ public class Student {
 		return vorName;
 	}
 
+	public String getNachName() {
+		return nachName;
+	}
+
 	
 	
 

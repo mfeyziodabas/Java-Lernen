@@ -18,6 +18,7 @@ public class Anwendung {
 			System.out.println(s);
 		}
 		
+		//Comparator with VorName
 		Arrays.sort(studenten, new Comparator<Student>() {
 			@Override
 			public int compare(Student o1, Student o2) {
@@ -26,6 +27,13 @@ public class Anwendung {
 			}
 		});
 		
+		System.out.println();
+		for(Student s: studenten) {
+			System.out.println(s);
+		}
+		
+		//Comparator with NachName using another class
+		Arrays.sort(studenten, new ComparatorWithNachname());
 		System.out.println();
 		for(Student s: studenten) {
 			System.out.println(s);
