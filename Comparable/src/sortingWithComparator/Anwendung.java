@@ -18,7 +18,7 @@ public class Anwendung {
 			System.out.println(s);
 		}
 		
-		//Comparator with VorName
+		//Comparator with VorName using Anonymous Class
 		Arrays.sort(studenten, new Comparator<Student>() {
 			@Override
 			public int compare(Student o1, Student o2) {
