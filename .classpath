@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Abstracte Classen/src"/>
+	<classpathentry kind="src" path="Comparable/src"/>
+	<classpathentry kind="src" path="Übung 7 Vererbung/src"/>
+	<classpathentry kind="src" path="Verschachtelte Klassen/src"/>
+	<classpathentry kind="output" path="Abstracte Classen/bin"/>
+</classpath>
