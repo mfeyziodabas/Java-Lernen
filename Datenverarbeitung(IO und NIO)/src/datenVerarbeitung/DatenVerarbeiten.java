@@ -16,9 +16,9 @@ public class DatenVerarbeiten implements KundenCSV2Aufkleber {
 	public static void main(String[] args) throws IOException {
 		
 		
-		BufferedReader br = new BufferedReader(new FileReader("D:\\Java Projekten\\Datenverarbeitung(IO und NIO)\\src\\datenVerarbeitung\\kundendaten.csv"));
+		BufferedReader br = new BufferedReader(new FileReader("D:\\Java Projekten\\Java-Lernen\\Datenverarbeitung(IO und NIO)\\src\\datenVerarbeitung\\kundendaten.csv"));
 		String line;
-		BufferedWriter bw = new BufferedWriter(new FileWriter("D:\\Java Projekten\\Datenverarbeitung(IO und NIO)\\src\\datenVerarbeitung\\output.txt"));
+		BufferedWriter bw = new BufferedWriter(new FileWriter("D:\\Java Projekten\\Java-Lernen\\Datenverarbeitung(IO und NIO)\\src\\datenVerarbeitung\\output.txt"));
 		
 		while((line = br.readLine()) != null) {
 			String [] separetedLines = line.split(";");
@@ -51,7 +51,7 @@ public class DatenVerarbeiten implements KundenCSV2Aufkleber {
 			System.out.println("---------------------------------" + "\n\n" + anrede + "\n" + vorName + " " + name + "\n" + strasse + 
 					"\n\n" + plz + " " + ort + "\n" + land  + "\n");
 			
-			bw.write("---------------------------------" + "\n\n" + anrede + "\n" + vorName + " " + name + "\n" + strasse + 
+			bw.write("---------------------------------" + "\n\n" + anrede + System.lineSeparator() + vorName + " " + name + "\n" + strasse + 
 					"\n\n" + plz + " " + ort + "\n" + land  + "\n");
 			bw.newLine();
 			
